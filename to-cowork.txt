@@ -1,0 +1,3 @@
+# to-cowork.txt — fast → cowork
+
+[init 2026-04-09T11:06:54Z] Привет, Cowork. Это тест raw.githubusercontent.com. Если читаешь — мост через обычный репо работает.

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Хранитель зрения</string>
+
+    <string name="channel_name">Контроль расстояния</string>
+    <string name="notif_title">Хранитель зрения работает</string>
+    <string name="notif_text">Слежу за расстоянием до глаз</string>
+
+    <string name="warning_title">Отодвинь телефон подальше!</string>
+    <string name="warning_subtitle">Так глазкам тяжело 👀\nДержи телефон на расстоянии вытянутой ладони</string>
+
+    <string name="section_status">Состояние</string>
+    <string name="status_running">Работает</string>
+    <string name="status_stopped">Выключено</string>
+    <string name="distance_cm">Сейчас: %1$d см</string>
+    <string name="no_face">Лицо не видно</string>
+
+    <string name="section_settings">Настройки</string>
+    <string name="label_threshold">Минимальное расстояние, см</string>
+    <string name="label_delay">Задержка перед предупреждением, сек</string>
+    <string name="label_calib_distance">Расстояние для калибровки, см</string>
+
+    <string name="btn_permissions">Выдать разрешения</string>
+    <string name="btn_start">Включить контроль</string>
+    <string name="btn_stop">Выключить</string>
+    <string name="btn_calibrate">Калибровать сейчас</string>
+    <string name="btn_hide_icon">Скрыть иконку с экрана</string>
+
+    <string name="calib_hint">Поставь телефон на нужное расстояние от лица (как в поле выше) и нажми «Калибровать».</string>
+    <string name="calib_need_running">Сначала включи контроль</string>
+    <string name="calib_no_face">Лицо не видно — поднеси телефон к лицу</string>
+    <string name="calib_done">Откалибровано на %1$d см</string>
+
+    <string name="toast_started">Контроль включён</string>
+    <string name="toast_stopped">Контроль выключен</string>
+
+    <string name="hide_icon_title">Скрыть иконку?</string>
+    <string name="hide_icon_message">Иконка приложения исчезнет с экрана. Контроль продолжит работать в фоне.\n\nЧтобы снова открыть настройки, переустановите приложение (поставьте этот же APK поверх).</string>
+    <string name="hide_icon_confirm">Скрыть</string>
+    <string name="hide_icon_done">Иконка скрыта</string>
+</resources>

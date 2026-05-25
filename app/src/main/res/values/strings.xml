@@ -1,12 +1,11 @@
 <resources>
-    <string name="app_name">Хранитель зрения</string>
+    <string name="app_name">Взгляд</string>
 
     <string name="channel_name">Контроль расстояния</string>
-    <string name="notif_title">Хранитель зрения работает</string>
+    <string name="notif_title">Взгляд работает</string>
     <string name="notif_text">Слежу за расстоянием до глаз</string>
 
-    <string name="warning_title">Отодвинь телефон подальше!</string>
-    <string name="warning_subtitle">Так глазкам тяжело 👀\nДержи телефон на расстоянии вытянутой ладони</string>
+    <string name="warning_title">ОТОДВИНЬ\nТЕЛЕФОН</string>
 
     <string name="section_status">Состояние</string>
     <string name="status_running">Работает</string>

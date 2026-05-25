@@ -35,10 +35,10 @@ class OverlayManager(private val context: Context) {
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.MATCH_PARENT,
                 type,
-                // Cover everything and keep the screen on, but DO let the
-                // overlay receive touches so the app underneath is blocked.
-                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON or
-                    WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED or
+                // Show on top but do NOT block interaction: touches pass through
+                // to the app underneath, and we never take input focus.
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or
+                    WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE or
                     WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN or
                     WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 PixelFormat.TRANSLUCENT
@@ -46,8 +46,6 @@ class OverlayManager(private val context: Context) {
             params.gravity = Gravity.TOP or Gravity.START
 
             val v = LayoutInflater.from(context).inflate(R.layout.overlay_warning, null)
-            // Swallow all touches so the blocked app cannot be used.
-            v.setOnTouchListener { _, _ -> true }
             try {
                 windowManager.addView(v, params)
                 view = v
